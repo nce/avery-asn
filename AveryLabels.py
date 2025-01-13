@@ -1,7 +1,7 @@
 from collections.abc import Iterator
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.units import mm, cm
+from reportlab.lib.pagesizes import A4, letter
+from reportlab.lib.units import mm, cm, inch
 
 # Usage:
 #   label = AveryLabels.AveryLabel(5160)
@@ -42,6 +42,9 @@ labelInfo = {
 
     # APLI 100984 40x 52.5x29.7mm 
     100984: (4, 10, (52.5*mm, 29.7*mm), (0, 0), (0, 0), A4),
+
+    # Royal Green 1x0.375 (1138)
+    1138: (7, 22, (1*inch, 0.375*inch), (0.1*inch,0.098*inch), (0.4375*inch, 0.24*inch), letter),
 }
 
 class AveryLabel:
