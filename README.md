@@ -25,9 +25,18 @@ positionHelper = True
 
 Printing with [these Avery Labels](https://www.amazon.de/dp/B0002S48QC) was not straightforward.
 My modifcations made them somewhat centered.
+
+### Building
+```sh 
+❯ nix-shell -p 'python312.withPackages(ps: with ps; [ reportlab reportlab-qrcode ])'
+$ python main.py
+```
+
 ### Printing from Tray
 * Upside down 
 * Bottom first
+
+
 ## Settings
 
 Configurations available in `main.py`:
