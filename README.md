@@ -21,6 +21,13 @@ labelsToPrint = 1
 positionHelper = True
 ```
 
+## Usage
+
+Printing with [these Avery Labels](https://www.amazon.de/dp/B0002S48QC) was not straightforward.
+My modifcations made them somewhat centered.
+### Printing from Tray
+* Upside down 
+* Bottom first
 ## Settings
 
 Configurations available in `main.py`:
